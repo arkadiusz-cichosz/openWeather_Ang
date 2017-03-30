@@ -11,7 +11,7 @@
 		<div class="widget-container">
 			<div class="city-name">
 				<h1>Grudziądz</h1>
-				<a href="#" title="change">Change city</a>
+				<a href="" id="changeCity">Change city</a>
 			</div>
 			<div class="main-presentation">
 				<div class="temperature">
@@ -22,12 +22,28 @@
 				</div>	
 			</div>
 			<div class="other-info">
-				<p>Wiatr: <span>xx</span></p>
-				<p>Wilgotność:<span>xx</span></p>
-				<p>Ciśnienie:<span>xx</span></p>	
+				<div id="items">
+					<p>Wiatr: </p>
+					<p>Wilgotność: </p>
+					<p>Ciśnienie: </p>	
+				</div>
+				<div id="data">
+					<p id="wind">xx</p>
+					<p id="humidity">xx</p>
+					<p id="pressure">xx</p>
+				</div>
 			</div>
+			<form class="location">
+				<fieldset>
+					<legend>Change of location</legend>
+					<input type="text" name="city" placeholder="city name">
+					<input type="text" name="country code" placeholder="country code">
+					<button>Change</button>
+				</fieldset>
+			</form>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+		<script src="js/changeCity.js" type="text/javascript"></script>
 	</body>
 </html>
