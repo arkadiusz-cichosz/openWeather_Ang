@@ -9,8 +9,8 @@
 	</head>
 	<body>
 		<div class="widget-container">
-			<div class="city-name">
-				<h1>Grudziądz</h1>
+			<div class="header">
+				<h1 id="nameOfCity">Grudziądz</h1>
 				<a href="" id="changeCity">Change city</a>
 			</div>
 			<div class="main-presentation">
@@ -37,13 +37,14 @@
 				<fieldset>
 					<legend>Change of location</legend>
 					<input type="text" name="city" placeholder="city name">
-					<input type="text" name="country code" placeholder="country code">
-					<button>Change</button>
+					<input type="text" name="countryCode" placeholder="country code">
+					<a href="" id="setCity">Set city</a>
 				</fieldset>
 			</form>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
 		<script src="js/changeCity.js" type="text/javascript"></script>
+		<script src="js/setLocation.js" type="text/javascript"></script>
 	</body>
 </html>

@@ -1,4 +1,5 @@
 $primary-yelow: #ffc74b
+$secondary-white: #ffffff;
 @import changeLocation
 .widget-container
 	font-family: "Arial", sans-serif
@@ -10,23 +11,19 @@ $primary-yelow: #ffc74b
 	padding: 0
 	margin: 0
 	position: relative
-	.city-name, .other-info
+	.header, .other-info
 		padding: 10px 20px
-	.other-info
+	.other-info, .main-presentation
 		display: flex
 		justify-content: space-around
 	.main-presentation
-		background-color: white
+		background-color: $secondary-white
 		width: 98%
 		margin: 0 auto
 		border: none
-		display: flex
 		align-items: center
-		justify-content: space-around
 		.temperature>
 			p
 				font-size: 1.6em
 				font-weight: bold
-				span
-					text-align: right
 

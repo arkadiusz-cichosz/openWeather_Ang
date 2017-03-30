@@ -1,8 +1,8 @@
-var isHidden = true;
 function changeCity () {
-	if (isHidden) {
-		$('.location').show();
-	}
+	$('.location').show(400);
+	//$('.location').css('display', 'block');
+	console.log('Edit box is open');
+	return false;
 }
 
 $('#changeCity').click(changeCity);
