@@ -1,5 +1,3 @@
-let myID = '77d4971436d26f540fd4b63a95bfb825';
-
 function setLocation () {
 	$('.location').hide(400);
 	//$('.location').css('display', 'none');
@@ -7,6 +5,9 @@ function setLocation () {
 	let countryCode = $('#countryCode').val();
 	console.log('User set: ' + cityName + ' ' + countryCode);
 	console.log('Edit box is hidden');
+	console.log('Send request to OpenWeather');
+	requestAPI(cityName, countryCode, myID);
+	makeCookie(cityName, countryCode);
 	return false;
 }
 
