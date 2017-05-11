@@ -1,6 +1,7 @@
 function makeCookie(cityName, countryCode) {
-	document.cookie = 'cityName=' + cityName;
-	document.cookie = 'countryCode=' + countryCode;
+	let timeToExpire = ';expires=Mon, 7 Jan 2019 12:00:00 UTC';
+	document.cookie = 'cityName=' + cityName + timeToExpire;
+	document.cookie = 'countryCode=' + countryCode + timeToExpire;
 	console.log('Created cookies: ' + document.cookie);
 }
 

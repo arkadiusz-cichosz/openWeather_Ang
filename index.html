@@ -7,15 +7,15 @@
 		<link rel="stylesheet" href="css/style.css">
   </head>
 	</head>
-	<body>
+	<body ng-app="openWeather" ng->
 		<div class="widget-container">
 			<div class="header">
-				<h1 id="nameOfCity"></h1>
+				<h1 id="nameOfCity">{{nameOfCity}}</h1>
 				<a href="" id="changeCity">Change city</a>
 			</div>
 			<div class="main-presentation">
 				<div class="temperature">
-					<p id="temperature"></p>
+					<p id="temperature">{{temperature}}</p>
 				</div>
 				<div class="icon">
 					<img id='icon' alt="weather icon" src="">
@@ -28,9 +28,9 @@
 					<p>Ciśnienie: </p>	
 				</div>
 				<div id="data">
-					<p id="wind">xx</p>
-					<p id="humidity">xx</p>
-					<p id="pressure">xx</p>
+					<p id="wind">{{wind}}</p>
+					<p id="humidity">{{humidity}}</p>
+					<p id="pressure">{{pressure}}</p>
 				</div>
 			</div>
 			<form class="location">
