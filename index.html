@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/style.css">
   </head>
 	</head>
-	<body ng-app="openWeather" ng->
+	<body ng-app="openWeather" ng-controller="myLocation">
 		<div class="widget-container">
 			<div class="header">
 				<h1 id="nameOfCity">{{nameOfCity}}</h1>
@@ -36,9 +36,9 @@
 			<form class="location">
 				<fieldset>
 					<legend>Change of location</legend>
-					<input type="text" name="city" id="city" placeholder="city name e.g. Warsaw">
-					<input type="text" name="countryCode" id="countryCode" placeholder="country code e.g. UK ">
-					<a href="" id="setCity">Set city</a>
+					<input type="text" ng-model="nameOfCity" name="city" id="city" placeholder="city name e.g. Warsaw">
+					<input type="text" ng-model="countryCode" name="countryCode" id="countryCode" placeholder="country code e.g. UK ">
+					<a href="" id="setCity" ng-click="setLocation()">Set city</a>
 				</fieldset>
 			</form>
 		</div>
